@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ShowGradientActivity"></activity>
+        <activity android:name=".activity.ShowGradientActivity" />
+        <activity android:name=".activity.TargetViewActivity"></activity>
     </application>
 
 </manifest>

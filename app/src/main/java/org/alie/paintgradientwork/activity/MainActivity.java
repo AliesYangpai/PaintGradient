@@ -9,12 +9,16 @@ import android.widget.Button;
 import org.alie.paintgradientwork.Const;
 import org.alie.paintgradientwork.R;
 
+import java.util.concurrent.CompletionService;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_bitmap_gradient;
     private Button btn_linearLayout_gradient;
     private Button btn_sweep_gradient;
     private Button radial_gradient;
+
+    private Button btn_radar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +30,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView(){
         btn_bitmap_gradient = findViewById(R.id.btn_bitmap_gradient);
-        btn_linearLayout_gradient = findViewById(R.id.btn_linearLayout_gradient);;
-        btn_sweep_gradient = findViewById(R.id.btn_sweep_gradient);;
-        radial_gradient = findViewById(R.id.radial_gradient);;
+        btn_linearLayout_gradient = findViewById(R.id.btn_linearLayout_gradient);
+        btn_sweep_gradient = findViewById(R.id.btn_sweep_gradient);
+        radial_gradient = findViewById(R.id.radial_gradient);
+
+        btn_radar = findViewById(R.id.btn_radar);
 
     }
     private void  initListener(){
@@ -36,29 +42,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_linearLayout_gradient.setOnClickListener(this);
         btn_sweep_gradient.setOnClickListener(this);
         radial_gradient.setOnClickListener(this);
+
+        btn_radar.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_bitmap_gradient:
-                goToNextPage(Const.BITMAP_GRADIENT);
+                goToNextPage(Const.INTENT_GRADIENT_KEY,Const.BITMAP_GRADIENT,ShowGradientActivity.class);
                 break;
             case R.id.btn_linearLayout_gradient:
-                goToNextPage(Const.LINEARLAYOUT_GRADIENT);
+                goToNextPage(Const.INTENT_GRADIENT_KEY,Const.LINEARLAYOUT_GRADIENT,ShowGradientActivity.class);
                 break;
             case R.id.btn_sweep_gradient:
-                goToNextPage(Const.SWEEP_GRADIENT);
+                goToNextPage(Const.INTENT_GRADIENT_KEY,Const.SWEEP_GRADIENT,ShowGradientActivity.class);
                 break;
             case R.id.radial_gradient:
-                goToNextPage(Const.RADIAL_GRADIENT);
+                goToNextPage(Const.INTENT_GRADIENT_KEY,Const.RADIAL_GRADIENT,ShowGradientActivity.class);
+                break;
+
+            case R.id.btn_radar:
+                goToNextPage(Const.INTENT_TARGET_KEY,Const.RADAR_VIEW,TargetViewActivity.class);
                 break;
         }
     }
 
-    private void goToNextPage(String tag) {
-        Intent intent = new Intent(this,ShowGradientActivity.class);
-        intent.putExtra(Const.INTENT_GRADIENT_KEY,tag);
+    private void goToNextPage(String key,String tag,Class<?> mClass) {
+        Intent intent = new Intent(this,mClass);
+        intent.putExtra(key,tag);
         startActivity(intent);
 
     }

@@ -8,6 +8,7 @@ import android.graphics.RadialGradient;
 import android.graphics.Shader;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -16,6 +17,7 @@ import android.view.View;
  * 版本
  */
 public class RadialGradientView extends View {
+    private static final String TAG = "RadialGradientView";
     private Paint mPaint;
     private int[] mColors = {Color.RED,Color.YELLOW,Color.BLUE,Color.GREEN};
 
@@ -40,6 +42,7 @@ public class RadialGradientView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        Log.i(TAG, "onDraw: ==================");
         RadialGradient radialGradient = new RadialGradient(getWidth() / 2, getHeight() / 2,
                 getWidth() / 2, mColors,null,Shader.TileMode.CLAMP);
         mPaint.setShader(radialGradient);
