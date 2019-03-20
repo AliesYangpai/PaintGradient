@@ -4,10 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
     tools:context=".activity.TargetViewActivity">
 
     <org.alie.paintgradientwork.targetview.RadarView
         android:layout_width="300dp"
         android:layout_height="300dp" />
+
+    <org.alie.paintgradientwork.targetview.LinearGradientTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#666666"
+        android:text="大西瓜呀圆又圆我们抱不动大"
+        />
 
 </LinearLayout>
