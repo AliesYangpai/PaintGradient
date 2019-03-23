@@ -11,10 +11,12 @@ public class Const {
     public static final String LINEARLAYOUT_GRADIENT = "linearlayout";
     public static final String SWEEP_GRADIENT = "sweep";
     public static final String RADIAL_GRADIENT = "radial";
+    public static final String COMPOSE_GRADIENT = "compose";
 
 
 
     public static final String INTENT_TARGET_KEY = "target";
 
     public static final String RADAR_VIEW = "radar_view";
+    public static final String LINEAR_GRADIENT_TEXT_VIEW = "linear_gradient_text_view";
 }

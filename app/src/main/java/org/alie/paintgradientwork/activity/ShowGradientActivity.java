@@ -8,6 +8,7 @@ import android.view.View;
 import org.alie.paintgradientwork.Const;
 import org.alie.paintgradientwork.R;
 import org.alie.paintgradientwork.view.BitmapGradientView;
+import org.alie.paintgradientwork.view.ComposeGadientView;
 import org.alie.paintgradientwork.view.LinearGradientView;
 import org.alie.paintgradientwork.view.RadialGradientView;
 import org.alie.paintgradientwork.view.SweepGradientView;
@@ -20,7 +21,7 @@ public class ShowGradientActivity extends AppCompatActivity {
     private RadialGradientView rgv;
     private LinearGradientView lgv;
     private SweepGradientView sgv;
-
+    private ComposeGadientView cvp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,7 @@ public class ShowGradientActivity extends AppCompatActivity {
         lgv = findViewById(R.id.lgv);
         rgv = findViewById(R.id.rgv);
         sgv = findViewById(R.id.sgv);
+        cvp = findViewById(R.id.cvp);
     }
 
 
@@ -51,6 +53,9 @@ public class ShowGradientActivity extends AppCompatActivity {
                 break;
             case Const.RADIAL_GRADIENT:
                 rgv.setVisibility(View.VISIBLE);
+                break;
+            case Const.COMPOSE_GRADIENT:
+                cvp.setVisibility(View.VISIBLE);
                 break;
         }
     }

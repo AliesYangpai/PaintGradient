@@ -9,15 +9,20 @@
     tools:context=".activity.TargetViewActivity">
 
     <org.alie.paintgradientwork.targetview.RadarView
+        android:id="@+id/rv"
         android:layout_width="300dp"
-        android:layout_height="300dp" />
+        android:layout_height="300dp"
+        android:visibility="gone"
+        />
 
     <org.alie.paintgradientwork.targetview.LinearGradientTextView
+        android:id="@+id/lgtv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:textColor="#666666"
         android:text="大西瓜呀圆又圆我们抱不动大"
+        android:visibility="gone"
         />
 
 </LinearLayout>

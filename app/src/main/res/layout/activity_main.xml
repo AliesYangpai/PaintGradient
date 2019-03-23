@@ -39,6 +39,12 @@
             android:layout_height="wrap_content"
             android:text="RadialGradient"
             />
+        <Button
+            android:id="@+id/compose_gradient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ComposeGradient"
+            />
     </LinearLayout>
 
 
@@ -60,6 +66,13 @@
             android:text="雷达View"
             />
 
+
+        <Button
+            android:id="@+id/btn_neon_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="霓虹灯文字View"
+            />
     </LinearLayout>
 
 </LinearLayout>
