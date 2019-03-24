@@ -16,7 +16,11 @@ public class Const {
 
 
     public static final String INTENT_TARGET_KEY = "target";
-
     public static final String RADAR_VIEW = "radar_view";
     public static final String LINEAR_GRADIENT_TEXT_VIEW = "linear_gradient_text_view";
+
+
+
+    public static final String INTENT_FILTER_KEY = "filter";
+    public static final String FLITER_BACK_OR_WHITE = "black_or_white";
 }

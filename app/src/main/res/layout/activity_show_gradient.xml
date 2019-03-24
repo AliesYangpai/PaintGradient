@@ -6,33 +6,33 @@
     android:orientation="vertical"
     tools:context=".activity.ShowGradientActivity">
 
-    <org.alie.paintgradientwork.view.BitmapGradientView
+    <org.alie.paintgradientwork.view.gradient.BitmapGradientView
         android:id="@+id/bgv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
         />
 
-    <org.alie.paintgradientwork.view.RadialGradientView
+    <org.alie.paintgradientwork.view.gradient.RadialGradientView
         android:id="@+id/rgv"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:visibility="gone"
         />
 
-    <org.alie.paintgradientwork.view.LinearGradientView
+    <org.alie.paintgradientwork.view.gradient.LinearGradientView
         android:id="@+id/lgv"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:visibility="gone"
         />
-    <org.alie.paintgradientwork.view.SweepGradientView
+    <org.alie.paintgradientwork.view.gradient.SweepGradientView
         android:id="@+id/sgv"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:visibility="gone"
         />
-    <org.alie.paintgradientwork.view.ComposeGadientView
+    <org.alie.paintgradientwork.view.gradient.ComposeGadientView
         android:id="@+id/cvp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

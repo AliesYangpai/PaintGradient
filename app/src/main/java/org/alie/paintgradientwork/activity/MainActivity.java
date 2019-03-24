@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_radar;
     private Button btn_neon_light;
 
+    private Button btn_filter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_radar = findViewById(R.id.btn_radar);
         btn_neon_light = findViewById(R.id.btn_neon_light);
 
+        btn_filter = findViewById(R.id.btn_filter);
+
     }
 
     private void initListener() {
@@ -51,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_radar.setOnClickListener(this);
         btn_neon_light.setOnClickListener(this);
+
+        btn_filter.setOnClickListener(this);
     }
 
     @Override
@@ -76,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_neon_light:
                 goToNextPage(Const.INTENT_TARGET_KEY, Const.LINEAR_GRADIENT_TEXT_VIEW, TargetViewActivity.class);
+                break;
+            case R.id.btn_filter:
+
+                goToNextPage(Const.INTENT_FILTER_KEY, Const.FLITER_BACK_OR_WHITE, FilterActivity.class);
                 break;
 
         }

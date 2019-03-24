@@ -1,4 +1,4 @@
-package org.alie.paintgradientwork.view;
+package org.alie.paintgradientwork.view.gradient;
 
 import android.content.Context;
 import android.graphics.Bitmap;

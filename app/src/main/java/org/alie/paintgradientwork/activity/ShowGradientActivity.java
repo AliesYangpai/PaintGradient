@@ -7,11 +7,11 @@ import android.view.View;
 
 import org.alie.paintgradientwork.Const;
 import org.alie.paintgradientwork.R;
-import org.alie.paintgradientwork.view.BitmapGradientView;
-import org.alie.paintgradientwork.view.ComposeGadientView;
-import org.alie.paintgradientwork.view.LinearGradientView;
-import org.alie.paintgradientwork.view.RadialGradientView;
-import org.alie.paintgradientwork.view.SweepGradientView;
+import org.alie.paintgradientwork.view.gradient.BitmapGradientView;
+import org.alie.paintgradientwork.view.gradient.ComposeGadientView;
+import org.alie.paintgradientwork.view.gradient.LinearGradientView;
+import org.alie.paintgradientwork.view.gradient.RadialGradientView;
+import org.alie.paintgradientwork.view.gradient.SweepGradientView;
 
 
 public class ShowGradientActivity extends AppCompatActivity {
