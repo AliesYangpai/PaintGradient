@@ -93,5 +93,10 @@
             android:text="滤镜"
             />
     </LinearLayout>
+    
+    
+    <org.alie.paintgradientwork.view.MyCircleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
