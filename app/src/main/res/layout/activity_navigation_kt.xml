@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kt.activity.NavigationKtActivity">
+
+
+    <Button
+        android:id="@+id/btn_bitmap_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="位图渲染"
+        />
+    <Button
+        android:id="@+id/btn_linearLayout_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线性渲染"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_bitmap_gradient"
+        />
+
+    <Button
+        android:id="@+id/btn_sweep_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描渲染"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_linearLayout_gradient"
+        />
+    <Button
+        android:id="@+id/btn_radial_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="环形渲染"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sweep_gradient"
+        />
+    <Button
+        android:id="@+id/btn_compose_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="组合渲染"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_radial_gradient"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

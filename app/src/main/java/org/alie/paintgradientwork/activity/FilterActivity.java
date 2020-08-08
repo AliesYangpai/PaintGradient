@@ -1,7 +1,8 @@
 package org.alie.paintgradientwork.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.alie.paintgradientwork.R;
 import org.alie.paintgradientwork.view.filter.FilterView;

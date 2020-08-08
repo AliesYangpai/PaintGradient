@@ -1,17 +1,21 @@
 package org.alie.paintgradientwork.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.alie.paintgradientwork.Const;
 import org.alie.paintgradientwork.R;
+import org.alie.paintgradientwork.kt.activity.NavigationKtActivity;
+import org.alie.paintgradientwork.kt.gradient.BitmapGradientView;
 
-import java.util.concurrent.CompletionService;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Button btn1;
 
     private Button btn_bitmap_gradient;
     private Button btn_linearLayout_gradient;
@@ -33,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
+        btn1 = findViewById(R.id.btn1);
+
         btn_bitmap_gradient = findViewById(R.id.btn_bitmap_gradient);
         btn_linearLayout_gradient = findViewById(R.id.btn_linearLayout_gradient);
         btn_sweep_gradient = findViewById(R.id.btn_sweep_gradient);
@@ -47,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initListener() {
+        btn1.setOnClickListener(this);
         btn_bitmap_gradient.setOnClickListener(this);
         btn_linearLayout_gradient.setOnClickListener(this);
         btn_sweep_gradient.setOnClickListener(this);
@@ -62,6 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn1:
+                goToNextPage(null,null, NavigationKtActivity.class);
+                break;
             case R.id.btn_bitmap_gradient:
                 goToNextPage(Const.INTENT_GRADIENT_KEY, Const.BITMAP_GRADIENT, ShowGradientActivity.class);
                 break;
