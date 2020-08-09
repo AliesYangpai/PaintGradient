@@ -64,7 +64,11 @@ class NavigationKtActivity : AppCompatActivity(), View.OnClickListener {
                 Const.GRADIENT_RADIAL,
                 ShowGradientKtActivity::class.java
             )
-//            R.id.btn_compose_gradient -> goToNextPage()
+            R.id.btn_compose_gradient -> goToNextPage(
+                Const.INTENT_GRADIENT_KEY,
+                Const.GRADIENT_COMPOSE,
+                ShowGradientKtActivity::class.java
+            )
         }
     }
 

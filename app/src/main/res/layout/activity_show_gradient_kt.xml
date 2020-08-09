@@ -38,4 +38,13 @@
         android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/radialGradientView" />
+
+    <org.alie.paintgradientwork.kt.gradient.ComposeGradientView
+        android:id="@+id/composeGradientView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility = "gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sweepGradientView"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

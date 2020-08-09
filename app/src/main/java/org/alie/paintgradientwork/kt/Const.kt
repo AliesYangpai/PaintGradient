@@ -11,4 +11,5 @@ object Const {
     const val GRADIENT_LINEAR = "linear"
     const val GRADIENT_RADIAL = "radial"
     const val GRADIENT_SWEEP = "sweep"
+    const val GRADIENT_COMPOSE = "compose"
 }
