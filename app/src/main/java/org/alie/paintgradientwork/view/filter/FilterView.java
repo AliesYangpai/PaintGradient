@@ -37,7 +37,7 @@ public class FilterView extends View {
 
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.xyjy2);
+        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.blanni);
     }
 
     public FilterView(Context context, @Nullable AttributeSet attrs) {
@@ -48,7 +48,7 @@ public class FilterView extends View {
 
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.xyjy2);
+        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.blanni);
     }
 
     public FilterView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -58,7 +58,7 @@ public class FilterView extends View {
 
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.xyjy2);
+        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.blanni);
     }
 
     @Override

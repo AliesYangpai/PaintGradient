@@ -34,7 +34,7 @@ public class BitmapGradientView extends View {
         super(context);
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.xyjy2);
+        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.blanni);
         mWidth = mBitmap.getWidth();
         mHeight = mBitmap.getHeight();
     }
@@ -43,7 +43,7 @@ public class BitmapGradientView extends View {
         super(context, attrs);
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.xyjy2);
+        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.blanni);
         mWidth = mBitmap.getWidth();
         mHeight = mBitmap.getHeight();
     }
@@ -52,7 +52,7 @@ public class BitmapGradientView extends View {
         super(context, attrs, defStyleAttr);
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.xyjy2);
+        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.blanni);
         mWidth = mBitmap.getWidth();
         mHeight = mBitmap.getHeight();
     }

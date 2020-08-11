@@ -17,6 +17,7 @@ class NavigationKtActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btn_sweep_gradient: Button
     private lateinit var btn_radial_gradient: Button
     private lateinit var btn_compose_gradient: Button
+    private lateinit var btn_filter: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +32,7 @@ class NavigationKtActivity : AppCompatActivity(), View.OnClickListener {
         btn_sweep_gradient = findViewById(R.id.btn_sweep_gradient)
         btn_radial_gradient = findViewById(R.id.btn_radial_gradient)
         btn_compose_gradient = findViewById(R.id.btn_compose_gradient)
+        btn_filter = findViewById(R.id.btn_filter)
     }
 
     fun initListener() {
@@ -39,6 +41,7 @@ class NavigationKtActivity : AppCompatActivity(), View.OnClickListener {
         btn_sweep_gradient.setOnClickListener(this)
         btn_radial_gradient.setOnClickListener(this)
         btn_compose_gradient.setOnClickListener(this)
+        btn_filter.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -69,6 +72,7 @@ class NavigationKtActivity : AppCompatActivity(), View.OnClickListener {
                 Const.GRADIENT_COMPOSE,
                 ShowGradientKtActivity::class.java
             )
+            R.id.btn_filter -> goToNextPage("", "", ShowFilterKtActivity::class.java)
         }
     }
 

@@ -20,7 +20,7 @@ class BitmapGradientView(context: Context, attributeSet: AttributeSet?, defStyle
     var bitmapShader: BitmapShader? = null
 
     init {
-        mBitmap = BitmapFactory.decodeResource(resources, R.drawable.xyjy2)
+        mBitmap = BitmapFactory.decodeResource(resources, R.drawable.blanni)
         mWidth = mBitmap!!.width
         mHeight = mBitmap!!.height
         mPaint = Paint()
